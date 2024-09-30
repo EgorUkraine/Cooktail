@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Koulen';
+    src: url('Koulen.eot');
+    src: local('Koulen'),
+        url('Koulen.eot?#iefix') format('embedded-opentype'),
+        url('Koulen.woff2') format('woff2'),
+        url('Koulen.woff') format('woff'),
+        url('Koulen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
