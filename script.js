@@ -3,6 +3,8 @@ let button_logo = document.querySelector('.logo')
 menu.style.position="absolute"
 menu.style.top="-300px"
 
+let article = document.querySelectorAll("article")
+
 button_logo.addEventListener("click", function(){
     anime({
         targets: '.menu',   
@@ -19,3 +21,24 @@ button_logo.addEventListener("click", function(){
         })
 })
 })
+
+for (let i=0; i<article.length;i+=1){
+    article[i].addEventListener("mouseover", function(){
+        anime({
+            targets: article[i],
+            scale:1.1,
+            duration:500,
+            easing: "linear"
+        })
+    })
+}
+for (let i=0; i<article.length;i+=1){
+    article[i].addEventListener("mouseout", function(){
+        anime({
+            targets: article[i],
+            scale:1,
+            duration:500,
+            easing: "linear"
+        })
+    })
+}
